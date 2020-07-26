@@ -5,9 +5,9 @@ small first java project for explaining random use
 Random number can be generated using two ways. java.util.Random class is used to generate random numbers of different data types such as boolean, int, long, float, and double. An object of Random class is initialized and the method nextInt(), nextDouble() or nextLong() is used to generate random number. You can also use Math.Random to generate random value between 0.0 and 1.0.
 
 ## Example: Using Java Random Class
-First, we will see the implementation using java.util.Random - Assume we need to generate 10 random numbers between 0 to 100.
+First, we will see the implementation using **java.util.Random** - Assume we need to generate __10 random numbers__ between 0 to 100.
 
-`
+```
     import java.util.Random;
     public class RandomNumbers{
 
@@ -19,14 +19,12 @@ First, we will see the implementation using java.util.Random - Assume we need to
               int randomNumber = objGenerator.nextInt(100);
               System.out.println("Random No : " + randomNumber); 
              }
-     }
-}
-
-
-`
+          }
+      }
+```
 
 ## Output:
-`
+<code>
     Random No : 17
     Random No : 57
     Random No : 73
@@ -37,7 +35,7 @@ First, we will see the implementation using java.util.Random - Assume we need to
     Random No : 97
     Random No : 73            
     Random No : 18 
-`
+</code>
 
 An object of Random class is initialized as objGenerator. 
 The Random class has a method as nextInt. This will provide a random number based on the argument specified as the upper limit, whereas it takes lower limit is 0.Thus, we get 10 random numbers displayed.
@@ -48,7 +46,8 @@ Now, if we want 10 random numbers generated java but in the range of 0.0 to 1.0,
 
 You can use the following loop to generate them
 
-`
+```
+
 public class DemoRandom{
   public static void main(String[] args) {
     for(int xCount = 0; xCount< 10; xCount++){
@@ -56,11 +55,11 @@ public class DemoRandom{
     }
   }
 }
-`
+```
 
 ## Output:
 
-<code>
+```
 0.46518450373334297
 0.14859851177803485
 0.5628391820492477
@@ -70,7 +69,7 @@ public class DemoRandom{
 0.9167350036262347
 0.49251219841030147
 0.7426056725722353 
-</code>
+```
 
 > Now, you know how those strange numbers are generated!!!
 
