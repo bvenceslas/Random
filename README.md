@@ -7,7 +7,7 @@ Random number can be generated using two ways. java.util.Random class is used to
 ## Example: Using Java Random Class
 First, we will see the implementation using java.util.Random - Assume we need to generate 10 random numbers between 0 to 100.
 
-<code>
+`
     import java.util.Random;
     public class RandomNumbers{
 
@@ -21,10 +21,12 @@ First, we will see the implementation using java.util.Random - Assume we need to
              }
      }
 }
-</code>
+
+
+`
 
 ## Output:
-<code>
+`
     Random No : 17
     Random No : 57
     Random No : 73
@@ -35,7 +37,7 @@ First, we will see the implementation using java.util.Random - Assume we need to
     Random No : 97
     Random No : 73            
     Random No : 18 
-</code>
+`
 
 An object of Random class is initialized as objGenerator. 
 The Random class has a method as nextInt. This will provide a random number based on the argument specified as the upper limit, whereas it takes lower limit is 0.Thus, we get 10 random numbers displayed.
@@ -46,7 +48,7 @@ Now, if we want 10 random numbers generated java but in the range of 0.0 to 1.0,
 
 You can use the following loop to generate them
 
-<code>
+`
 public class DemoRandom{
   public static void main(String[] args) {
     for(int xCount = 0; xCount< 10; xCount++){
@@ -54,7 +56,7 @@ public class DemoRandom{
     }
   }
 }
-</code>
+`
 
 ## Output:
 
@@ -70,7 +72,7 @@ public class DemoRandom{
 0.7426056725722353 
 </code>
 
-Now, you know how those strange numbers are generated!!!
+> Now, you know how those strange numbers are generated!!!
 
 ### Summary:
 Random number can be generated using two ways. You can use Random class (in package java.util) or Using Math.random java class (however this will generate double in the range of 0.0 to 1.0 and not integers).
